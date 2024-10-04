@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header :class="{ sticky: isSticky }">
-      <img id="logo" src="../assets/img/logo.png">
+      <img id="logo" src="../assets/img/logo.png" />
       <nav class="mt-5">
         <a href="#Home" @click.prevent="scrollTo('Home')">Home</a>
         <a href="#aboutme" @click.prevent="scrollTo('aboutme')">about</a>
@@ -15,13 +15,11 @@
     </header>
     <div id="page" :class="{ menuopen: menuOpen }">
       <div class="container" id="Home">
-        <div class="text-content ">
+        <div class="text-content">
           <h1>FRONTEND</h1>
           <div class="developer-title">developer</div>
           <p>
-            Hello, I'm FAJAR ISMAIL, a frontend developer focused on creating
-            responsive user interfaces. I combine creativity with technology to
-            deliver effective web solutions.
+            Hello, I'm FAJAR ISMAIL, a frontend developer focused on creating responsive user interfaces. I combine creativity with technology to deliver effective web solutions.
           </p>
         </div>
         <div class="image-container">
@@ -30,44 +28,55 @@
       </div>
       <div class="about p-5" id="aboutme">
         <h1 class="ms-5 my-5 text-light">About Me</h1>
-        <div class="row ">
-          <div class="col-4 d-flex justify-content-center ">
-            <div class="card border-primary" style="width: 18rem;  background-color: black;">
+        <div class="row text-light">
+          <div class="col-4 d-flex justify-content-center">
+            <div class="card border-primary" style="width: 18rem; background-color: black">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
           </div>
           <div class="col-4 d-flex justify-content-center py-5">
-            <div class="card border-primary rounded-circle" style="width: 18rem; background-color: black;">
+            <div class="card border-primary rounded-circle" style="width: 18rem; background-color: black">
               <div class="card-body">
-                <img class="p-1" src="../assets/img/pr.jpeg" alt="" style="width:100%; border-radius:100% ;">
+                <img class="p-1" src="../assets/img/pr.jpeg" alt="" style="width: 100%; border-radius: 100%" />
               </div>
             </div>
           </div>
-          <div class="col-4 d-flex justify-content-center">
-            <div class="card border-primary" style="width: 18rem; background-color: black;">
+          <div class="col-4 d-flex justify-content-center text-light">
+            <div class="card border-primary" style="width: 18rem; background-color: black">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+                <h5 class="card-title text-light">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="about-text p-5 text-center mx-5 mt-5">
-          <p>Hello! My name is Fajar Ismail, and I am a frontend developer experienced in building engaging and
-            responsive web applications. I possess skills in HTML, CSS, and JavaScript, along with experience in
-            framework such as Nuxt.js and Vue.js.
-            I truly enjoy the challenge of creating intuitive and satisfying user interfaces. Additionally, I prioritize
-            good design principles to ensure an optimal user experience.
-
-            I constantly strive to keep up with the latest trends and technologies in web development. Outside of
-            coding, I enjoy collaborating with teams and sharing knowledge about best practices in development.
-          </p> <br>
+        <div class="about-text p-5 text-center mx-5 mt-5 text-light">
+          <p>
+            Hello! My name is Fajar Ismail, and I am a frontend developer experienced in building engaging and responsive web applications. I possess skills in HTML, CSS, and
+            JavaScript, along with experience in framework such as Nuxt.js and Vue.js. I truly enjoy the challenge of creating intuitive and satisfying user interfaces.
+            Additionally, I prioritize good design principles to ensure an optimal user experience. I constantly strive to keep up with the latest trends and technologies in web
+            development. Outside of coding, I enjoy collaborating with teams and sharing knowledge about best practices in development.
+          </p>
+          <br />
           <p>Thank you for taking the time to get to know me. I look forward to contributing to exciting projects!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="project my-5 py-5" style="height: 400px;">
+    <h1 class="d-flex justify-content-center">Project</h1>
+    <div class="row my-5 py-5">
+      <div class="col-6 d-flex justify-content-center">
+        <div class="card" style="width:  25rem;height: 12rem;">
+          <img src="..." class="card-img-top" alt="..." />
+        </div>
+      </div>
+      <div class="col-6 d-flex justify-content-center">
+        <div class="card" style="width:  25rem ;height: 12rem;">
+          <img src="..." class="card-img-top" alt="..." />
         </div>
       </div>
     </div>
@@ -166,7 +175,7 @@ body {
   background: #000;
   font-size: 18px;
   font-weight: 400;
-  font-family: "-apple-system", "BlinkMacSystemFont", "Roboto", "Helvetica Neue", sans-serif !important;
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -198,7 +207,7 @@ section {
 }
 
 section:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
