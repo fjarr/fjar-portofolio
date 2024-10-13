@@ -1,10 +1,10 @@
 <template>
+  <div>
     <div>
-      <div>
-        <slot />
-      </div>
+      <slot/>
     </div>
-  </template>
+  </div>
+</template>
 <style>
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 </style>

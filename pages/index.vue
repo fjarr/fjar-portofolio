@@ -3,10 +3,10 @@
     <header :class="{ sticky: isSticky }">
       <img id="logo" src="../assets/img/logo.png" />
       <nav class="mt-5">
-        <a href="#Home" @click.prevent="scrollTo('Home')">Home</a>
+        <a href="#Home" @click.prevent="scrollTo('Home')" >Home</a>
         <a href="#aboutme" @click.prevent="scrollTo('aboutme')">about</a>
-        <a href="#space" @click.prevent="scrollTo('space')">Space</a>
-        <a href="#future" @click.prevent="scrollTo('future')">Future</a>
+        <a href="#project" @click.prevent="scrollTo('project')">project</a>
+        <a href="#contact" @click.prevent="scrollTo('contact')">contact</a>
         <button @click="toggleMenu" id="openmenu">
           <span></span>
           <span></span>
@@ -15,68 +15,276 @@
     </header>
     <div id="page" :class="{ menuopen: menuOpen }">
       <div class="container" id="Home">
-        <div class="text-content">
-          <h1>FRONTEND</h1>
-          <div class="developer-title">developer</div>
-          <p>
-            Hello, I'm FAJAR ISMAIL, a frontend developer focused on creating responsive user interfaces. I combine creativity with technology to deliver effective web solutions.
-          </p>
-        </div>
-        <div class="image-container">
-          <img src="../assets/img/fajar.png" alt="Fajar Ismail" />
-        </div>
-      </div>
+    <div class="text-content">
+        <h1>FRONTEND</h1>
+        <div class="developer-title">developer</div>
+        <p>
+            Hello, I'm FAJAR ISMAIL, a frontend developer focused on creating responsive user interfaces. I combine
+            creativity with technology to deliver effective web solutions.
+        </p>
+    </div>
+    <div class="image-container">
+        <img src="../assets/img/fajar.png" alt="Fajar Ismail" />
+    </div>
+</div>
       <div class="about p-5" id="aboutme">
         <h1 class="ms-5 my-5 text-light">About Me</h1>
         <div class="row text-light">
-          <div class="col-4 d-flex justify-content-center">
-            <div class="card border-primary" style="width: 18rem; background-color: black">
+          <div class="col-lg-4 d-flex justify-content-center py-5">
+            <div class="card  rounded-circle" style="width: 18rem; background-color: black">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <img class="p-1" src="../assets/img/pr.png" alt="" style="width: 100%; border-radius:100%;" />
               </div>
             </div>
           </div>
-          <div class="col-4 d-flex justify-content-center py-5">
-            <div class="card border-primary rounded-circle" style="width: 18rem; background-color: black">
-              <div class="card-body">
-                <img class="p-1" src="../assets/img/pr.jpeg" alt="" style="width: 100%; border-radius: 100%" />
-              </div>
-            </div>
-          </div>
-          <div class="col-4 d-flex justify-content-center text-light">
-            <div class="card border-primary" style="width: 18rem; background-color: black">
-              <div class="card-body">
-                <h5 class="card-title text-light">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="about-text p-5 text-center mx-5 mt-5 text-light">
+          <div class="col-lg-8 d-flex justify-content-center text-light">
+            <div class="about-text pt-5 text-light">
           <p>
-            Hello! My name is Fajar Ismail, and I am a frontend developer experienced in building engaging and responsive web applications. I possess skills in HTML, CSS, and
-            JavaScript, along with experience in framework such as Nuxt.js and Vue.js. I truly enjoy the challenge of creating intuitive and satisfying user interfaces.
-            Additionally, I prioritize good design principles to ensure an optimal user experience. I constantly strive to keep up with the latest trends and technologies in web
-            development. Outside of coding, I enjoy collaborating with teams and sharing knowledge about best practices in development.
+            Hello! My name is Fajar Ismail, and I am a frontend developer experienced in building engaging and
+            responsive web applications. I possess skills in HTML, CSS, and
+            JavaScript, along with experience in framework such as Nuxt.js and Vue.js. I truly enjoy the challenge of
+            creating intuitive and satisfying user interfaces.
+            Additionally, I prioritize good design principles to ensure an optimal user experience. I constantly strive
+            to keep up with the latest trends and technologies in web
+            development. Outside of coding, I enjoy collaborating with teams and sharing knowledge about best practices
+            in development.
           </p>
           <br />
           <p>Thank you for taking the time to get to know me. I look forward to contributing to exciting projects!</p>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="project my-5 py-5" style="height: 400px;">
-    <h1 class="d-flex justify-content-center">Project</h1>
-    <div class="row my-5 py-5">
-      <div class="col-6 d-flex justify-content-center">
-        <div class="card" style="width:  25rem;height: 12rem;">
-          <img src="..." class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="tools mt-5 pt-5">
+          <h1 class="ms-5 my-5 text-light">Tools</h1>
+          <div class="row">
+            <div class="col-lg-3 p-5">
+              <div class="card bg-transparent border-primary">
+                <div class="card-bod">
+                  <div class="row">
+                    <div class="col-4">
+                      <img src="../assets/img/html.png" alt="" id="lt">
+                    </div>
+                    <div class="col-8 mt-4 text-light">
+                      <h5>HTML</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 p-5">
+              <div class="card bg-transparent border-primary">
+                <div class="card-bod">
+                  <div class="row">
+                    <div class="col-4">
+                      <img src="../assets/img/css.png" alt="" id="lt">
+                    </div>
+                    <div class="col-8 mt-4 text-light">
+                      <h5>CSS</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 p-5">
+              <div class="card bg-transparent border-primary">
+                <div class="card-bod">
+                  <div class="row">
+                    <div class="col-4">
+                      <img src="../assets/img/js.png" alt="" id="lt">
+                    </div>
+                    <div class="col-8 mt-4 text-light">
+                      <h5>JavaScript</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 p-5">
+              <div class="card bg-transparent border-primary">
+                <div class="card-bod">
+                  <div class="row">
+                    <div class="col-4">
+                      <img src="../assets/img/nx.png" alt="" id="lt">
+                    </div>
+                    <div class="col-8 mt-4 text-light">
+                      <h5>NUXT JS</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 p-5">
+              <div class="card bg-transparent border-primary">
+                <div class="card-bod">
+                  <div class="row">
+                    <div class="col-4">
+                      <img src="../assets/img/v.png" alt="" id="lt">
+                    </div>
+                    <div class="col-8 mt-4 text-light">
+                      <h5>VUE JS</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 p-5">
+              <div class="card bg-transparent border-primary">
+                <div class="card-bod">
+                  <div class="row">
+                    <div class="col-4">
+                      <img src="../assets/img/nd.png" alt="" id="lt">
+                    </div>
+                    <div class="col-8 mt-4 text-light">
+                      <h5>NODE</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 p-5">
+              <div class="card bg-transparent border-primary">
+                <div class="card-bod">
+                  <div class="row">
+                    <div class="col-4">
+                      <img src="../assets/img/b.png" alt="" id="lt">
+                    </div>
+                    <div class="col-8 mt-4 text-light">
+                      <h5>BOOTSTRAP</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 p-5">
+              <div class="card bg-transparent border-primary">
+                <div class="card-bod">
+                  <div class="row">
+                    <div class="col-4">
+                      <img src="../assets/img/t.png" alt="" id="lt">
+                    </div>
+                    <div class="col-8 mt-4 text-light">
+                      <h5>TAILWIND</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 p-5">
+              <div class="card bg-transparent border-primary">
+                <div class="card-bod">
+                  <div class="row">
+                    <div class="col-4">
+                      <img src="../assets/img/p.png" alt="" id="lt">
+                    </div>
+                    <div class="col-8 mt-4 text-light">
+                      <h5>POSTGRESQL</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-6 d-flex justify-content-center">
-        <div class="card" style="width:  25rem ;height: 12rem;">
-          <img src="..." class="card-img-top" alt="..." />
+      <div class="project my-5 py-5" id="project">
+        <h1 class="ms-5 ps-4 my-5 text-light">Project</h1>
+        <div class="row my-5 py-5">
+          <div class="col-lg-3 p-5 d-flex justify-content-center">
+            <div class="card " style="height: 100%;" id="pr">
+              <div class="card-content p-2">
+                <img src="../assets/img/ang.jpg" class="card-img-top" alt="..." />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 p-5  d-flex justify-content-center">
+            <div class="card " style="height: 100%;" id="pr">
+              <div class="card-content p-2">
+                <img src="../assets/img/cashier.jpg" class="card-img-top" alt="..." />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 p-5  d-flex justify-content-center">
+            <div class="card" style="height: 100%;" id="pr">
+              <div class="card-content p-4">
+                <img src="..." class="card-img-top" alt="..." />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact px-5 mx-5 pt-5 mt-5" id="contact">
+        <h1 class="d-flex justify-content-center text-light pt-5">Contact me</h1>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-10 col-sm-6 px-5">
+            <div class="card my-3 p-2 text-center  bg-transparent border-2 border-white" style="opacity: 80%">
+              <form>
+                <div class="mb-4 px-5 mt-4">
+                  <h3 class="text-light mb-2" style="display: flex; justify-content: start;">Name</h3>
+                  <input type="text" class="form-control rounded-2 p-2 bg-transparent text-light"
+                    placeholder="Name ......." />
+                </div>
+                <div class="mb-4 px-5">
+                  <h3 class="text-light mb-2" style="display: flex; justify-content: start;">Email</h3>
+                  <input type="email" class="form-control rounded-2 p-2 bg-transparent text-light"
+                    placeholder="Email ......." />
+                </div>
+                <div class="mb-4 px-5">
+                  <h3 class="text-light mb-2" style="display: flex; justify-content: start;">Message</h3>
+                  <textarea name="Message" class="form-control rounded-2 p-2 bg-transparent text-light"
+                    placeholder="Message"></textarea>
+                </div>
+                <div class="mb-4 mx-5 mb-2">
+                  <button type="submit" class="btn mb-5 px-5 py-3 form-control" style="background-color: white">
+                    <h3>SEND MESSAGE</h3>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="collapse">
+
+          </div>
+        </div>
+      </div>
+      <div class="footer pt-5">
+        <hr class="border border-light border-2 my-4" style="width: 100%">
+        <div class="row">
+          <div class="col-12 col-md-3 my-5 ps-5">
+            <h4 class="pb-3">Contact</h4>
+            <p>Email: fjarr47@gmail.com</p>
+            <p>Phone: +62-857-2386-7299</p>
+          </div>
+          <div class="col-12 col-md-3 my-5 px-5">
+            <h4 class="pb-3">Company</h4>
+            <ul>
+              <li>WEFRAZ</li>
+              <li>CP MAIL</li>
+              <li>Spetrum</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3 my-5 px-5">
+            <ul class="list-inline my-5 text-center">
+              <li class="list-inline-item m-3">
+                <i class="bi bi-github"></i>
+              </li>
+              <li class="list-inline-item m-3">
+                <i class="bi bi-twitter-x"></i>
+              </li>
+              <li class="list-inline-item m-3">
+                <i class="bi bi-instagram"></i>
+              </li>
+              <li class="list-inline-item m-3">
+                <i class="bi bi-linkedin"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3 my-5 px-5">
+            <h4 class="pb-3">Random Quote</h4>
+            <p>"Every mistake is a teacher. Don't be afraid to fail, as it is a part of your journey."</p>
+            <hr class="mt-4">
+            <div class="cr mt-4">copyright@fajarismail-2024</div>
+          </div>
         </div>
       </div>
     </div>
@@ -119,6 +327,160 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+h5{
+  font-size: 13px;
+}
+.text-content {
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+.developer-title {
+    font-size: 2.5vw;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.5vw;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+.footer {
+  padding-top: 5rem;
+}
+
+.footer h4 {
+  font-size: 1.5rem;
+}
+
+.footer p {
+  font-size: 1rem;
+}
+
+.footer .navbar-nav i {
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+.list-inline-item i {
+    font-size: 1.5rem; 
+  }
+  .card-title {
+  font-size: 1.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+        font-size: 30px;
+    }
+
+    .developer-title {
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 1px;
+    }
+  
+  .card-text, .about-text p {
+    font-size: 1rem;
+  }
+  .footer {
+    padding-top: 2rem;
+  }
+
+  .footer h4 {
+    font-size: 1.2rem;
+  }
+  .footer p {
+    font-size: 0.9rem;
+  }
+
+  .footer .navbar-nav i {
+    font-size: 1.2rem;
+  }
+  .list-inline-item i {
+    font-size: 1rem; 
+  }
+  .tools h5 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+        font-size: 30px;
+    }
+
+    .developer-title {
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 1px;
+    }
+
+    .image-container img {
+        width: 80%;
+        height: auto;
+    }
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text, .about-text p {
+    font-size: 0.9rem;
+  }
+  .footer {
+    padding: 1rem;
+  }
+
+  .footer h4 {
+    font-size: 1rem;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+  }
+
+  .footer .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .list-inline-item i {
+    font-size: 0.8rem; 
+  }
+  .tools h5 {
+    font-size: 0.9rem;
+  }
+}
+
+#lt {
+  margin: 10%;
+  height: 50px;
+  width: 50px;
+}
+
+#pr {
+  background-color: #0f0f0f;
+}
+
+i {
+  font-size: 50px;
+  margin: 10%;
+}
+
 #app {
   background-color: black;
 }
